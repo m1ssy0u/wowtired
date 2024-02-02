@@ -7,7 +7,7 @@ function App() {
   const myText = useRef<HTMLInputElement>(null)
   const [lat , setlat] = useState<number | null>(null)
   const [long , setlong] = useState<number | null>(null)
-  setInterval(getForm ,2000)
+  setInterval(getForm ,5000)
   async function getForm(){
     navigator.geolocation.getCurrentPosition((position)=>{
       setlat(position.coords.latitude)
