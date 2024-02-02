@@ -17,7 +17,7 @@ function App() {
     const formData = await myText.current?.value
     await axios.post("https://asdasd.rachatat.com/checktext",{ text : formData ,lat,long })
     .then((res)=>{
-      res.data == 'ok' ? setStatus('ok') : null
+      res.data == 'ok' ? setStatus('ok') : setStatus('invalid')
     })
     .catch(()=>{
       setStatus('invalid')
