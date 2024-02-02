@@ -14,7 +14,7 @@ function App() {
     })
     // console.log("getformJa")
     const formData = await myText.current?.value
-    await axios.post("http://34.87.92.34:3333/checktext",{ text : formData ,lat,long })
+    await axios.post("https://asdasd.rachatat.com/checktext",{ text : formData ,lat,long })
     // .then((res)=>{
     //   console.log(res)
     // })
