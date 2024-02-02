@@ -20,7 +20,7 @@ function App() {
       res.data == 'ok' ? setStatus('ok') : setStatus('invalid')
     })
     .catch(()=>{
-      setStatus('invalid')
+      setStatus('network error')
     })
 
   }
